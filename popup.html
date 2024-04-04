@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang=en>
-<meta charset=utf-8>
+<html lang="ko">
+<meta charset="utf-8">
+<link rel="stylesheet" href="schedule.css">
 <head>
-    <link rel="stylesheet" href="button.css">
 </head>
 <body>
-<button id="changeColor"></button>
+<input type="text" id="newSchedule" placeholder="일정 추가">
+<button id="addSchedule">일정 추가</button>
+<div id="completedSchedules" class="completed-schedules"></div>
+<button id="showCompletedSchedules">완료된 일정 보기</button>
+<button id="showActiveSchedules">진행 중인 일정 보기</button>
+<div id="scheduleList" class="sortable"></div>
 <script src="popup.js"></script>
 </body>
 </html>

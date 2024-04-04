@@ -1,0 +1,9 @@
+/* 드래그 중인 요소 스타일 */
+.schedule-item.dragging {
+    opacity: 0.5;
+}
+
+/* 드롭 가능 영역 스타일 */
+.schedule-list.over {
+    border: 2px dashed #000;
+}
