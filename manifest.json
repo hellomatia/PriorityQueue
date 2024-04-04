@@ -1,0 +1,30 @@
+{
+  "name": "PriorityQueue",
+  "description": "우선순위 큐로 일정을 관리해줍니다.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/icons8-tree-structure-16.png",
+      "32": "/images/icons8-tree-structure-32.png",
+      "48": "/images/icons8-tree-structure-48.png",
+      "128": "/images/icons8-tree-structure-128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/icons8-tree-structure-16.png",
+    "32": "/images/icons8-tree-structure-32.png",
+    "48": "/images/icons8-tree-structure-48.png",
+    "128": "/images/icons8-tree-structure-128.png"
+  },
+  "options_page": "options.html"
+}
