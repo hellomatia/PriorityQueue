@@ -36,9 +36,46 @@ function addSchedule() {
   document.getElementById('showActiveSchedules').addEventListener('click', function() {
     renderActiveSchedules(); // 진행 중인 일정만 보여주기
   });
+
 });
 
 
+// // 타이머 기능
+// let timerInterval;
+// document.getElementById('timer-start').addEventListener('click', function() {
+//   const minutes = parseInt(document.getElementById('timer-input').value);
+//   let time = minutes * 60;
+//   clearInterval(timerInterval);
+//   timerInterval = setInterval(() => {
+//     if (time <= 0) {
+//       clearInterval(timerInterval);
+//       alert('타이머 종료!');
+//       document.getElementById('timer-time').textContent = "00:00:00"; // 타이머 종료 시 0으로 설정
+//       return;
+//     }
+//     time--;
+//     document.getElementById('timer-time').textContent = new Date(time * 1000).toISOString().slice(11, 19);
+//   }, 1000);
+// });
+
+// document.getElementById('timer-stop').addEventListener('click', function() {
+//   clearInterval(timerInterval);
+// });
+
+// // 스톱워치 기능
+// let stopwatchInterval;
+// let stopwatchTime = 0;
+// document.getElementById('stopwatch-start').addEventListener('click', function() {
+//   clearInterval(stopwatchInterval);
+//   stopwatchInterval = setInterval(() => {
+//     stopwatchTime++;
+//     document.getElementById('stopwatch-time').textContent = new Date(stopwatchTime * 1000).toISOString().slice(11, 19);
+//   }, 1000);
+// });
+
+// document.getElementById('stopwatch-stop').addEventListener('click', function() {
+//   clearInterval(stopwatchInterval);
+// });
 
 
 // 일정 저장

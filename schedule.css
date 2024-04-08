@@ -24,8 +24,6 @@
     background-color: #f9f9f9; /* 배경 색상 */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
-
 body {
   font-family: 'Noto Sans KR', sans-serif;
   background-color: #3f3e3e; /* 배경색을 검은색으로 설정 */
@@ -46,6 +44,12 @@ body {
 }
 
 /* 버튼 텍스트 색상 변경을 원할 경우 */
-.btn-success, .btn-warning {
+.btn-success {
   color: white;
 }
+
+.btn-progress {
+    background-color: #6f42c1; /* 보라색 */
+    border-color: #6f42c1; /* 보라색 테두리 */
+    color: white; /* 텍스트 색상 */
+  }
