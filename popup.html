@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="ko">
-<meta charset="utf-8">
-<link rel="stylesheet" href="schedule.css">
 <head>
+<meta charset="utf-8">
+<title>일정 관리</title>
+<!-- Bootstrap CSS 추가 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="schedule.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<input type="text" id="newSchedule" placeholder="일정 추가">
-<button id="addSchedule">일정 추가</button>
-<div id="completedSchedules" class="completed-schedules"></div>
-<button id="showCompletedSchedules">완료된 일정 보기</button>
-<button id="showActiveSchedules">진행 중인 일정 보기</button>
-<div id="scheduleList" class="sortable"></div>
+<div class="container">
+<!-- 일정 추가 섹션 -->
+<div class="input-group mb-3">
+    <input type="text" id="newSchedule" class="form-control" placeholder="일정 추가">
+    <div class="input-group-append">
+      <button id="addSchedule" class="btn btn-outline-secondary full-width-btn" type="button">일정 추가</button>
+    </div>
+  </div>
+  
+  <!-- 완료된 일정과 진행 중인 일정 버튼 -->
+  <div class="btn-group mb-3 justify-content-center d-flex" role="group" aria-label="Basic example">
+    <button id="showCompletedSchedules" type="button" class="btn btn-success full-width-btn">완료!!!</button>
+    <button id="showActiveSchedules" type="button" class="btn btn-warning full-width-btn">진행중...</button>
+  </div>
+
+  <!-- 일정 목록 -->
+  <div id="completedSchedules" class="completed-schedules"></div>
+  <div id="scheduleList" class="sortable"></div>
+</div>
+
+<!-- Bootstrap JS와 의존성 파일들 -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="popup.js"></script>
 </body>
 </html>
