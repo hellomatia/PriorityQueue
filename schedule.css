@@ -27,8 +27,8 @@
 body {
   font-family: 'Noto Sans KR', sans-serif;
   background-color: #3f3e3e; /* 배경색을 검은색으로 설정 */
-  font-weight: 600; /* 폰트 굵기를 중간 정도로 설정 */
-  font-size: 15px; /* 폰트 크기를 16px로 설정 */
+  font-weight: 400; 
+  font-size: 17px;
   width: 300px;
   height: 300px;
 }
